@@ -1,0 +1,22 @@
+# 6th sep:
+    - lets keep the db name as WebFontUse
+    - keep detailed error log in file
+    - keep track of where we are at CSV file ... so that we can resume from the same position
+    - you can maintain state in db or state.json file
+    - state.json can have csv_file_name and number of records processed ie offset, start: data time, and end:datetime
+    - so that you can resume
+    - please process as must recodes as you can for tomorrow EOD
+    - 5 to 10K at least
+    - we will create on db in our server and provide you host and connection details
+    - and you can then store your data there
+    - will send you the details 
+
+    - if fetching data from url takes more than 10 second just skip/continue or stop/break program and execute again.
+    - run particular script before program close/end.
+
+# 7th sep:
+    - state.json can have csv_file_name and number of records processed ie offset, start: data time, and end:datetime
+    - skip url if took too long.(and log the skipped url):1min
+    - create new log, skip_url.txt
+    - how to schedule python script via window task schedular?(batch script...) extension -> .bat
+
