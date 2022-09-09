@@ -1,0 +1,1 @@
+"C:\Users\DELL\AppData\Local\Programs\Python\Python310\python.exe" "C:\Users\DELL\Desktop\Font Detial\WebFontInUse\app.py"

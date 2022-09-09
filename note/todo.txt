@@ -20,3 +20,4 @@
     - create new log, skip_url.txt
     - how to schedule python script via window task schedular?(batch script...) extension -> .bat
 
+

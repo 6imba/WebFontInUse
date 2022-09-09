@@ -12,6 +12,7 @@ def state_management():
     json_dict = json.load(state_json_file_read) # python dictionary...
     json_dict["length"] = 0
     json_dict["time_taken"] = 0
+    json_dict["site_font_urls"] = config.SITE_FONT_URLS
     state_json_file_read.close()
     site_font_urls = open(json_dict["site_font_urls"])
     for iteration,row in enumerate(site_font_urls):
@@ -76,7 +77,8 @@ def retrieve_font_data(fontUrl,fontFilePath):
         reqConn = request.urlopen(req, timeout=60)
     except:
         save_in_log(config.SKIP_URL,fontUrl)
-        raise Exception("Timeout")
+        raise Exception("Timeout 60 second.")
+        
     else:
         byteData = reqConn.read()
         file = open(fontFilePath, 'wb')

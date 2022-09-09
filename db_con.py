@@ -4,15 +4,6 @@ import mysql.connector
 db_connection = mysql.connector.connect(host="localhost",user="simba",passwd="1234",database='WebFontInUse',auth_plugin='mysql_native_password')
 db_cursor = db_connection.cursor()
 
-# db_connection = mysql.connector.connect(host="localhost",user="simba",passwd="1234",auth_plugin='mysql_native_password')
-# db_cursor = db_connection.cursor()
-# db_cursor.execute("DROP database IF EXISTS WebFontInUse")
-# db_cursor.execute("CREATE database WebFontInUse")
-# db_cursor.execute("use WebFontInUse")
-
-# db_connection = mysql.connector.connect(host=config.HOST_NAME,user=config.USER_NAME,passwd=config.PASSWORD,database=config.DB_NAME,auth_plugin='mysql_native_password')
-# db_cursor = db_connection.cursor()
-
 def create_db_table():
     metadata_table_create_query = """CREATE TABLE if not exists meta_data (
         MetaDataID              int AUTO_INCREMENT PRIMARY KEY,
