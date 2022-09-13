@@ -1,0 +1,5 @@
+print( isinstance(1, int) )
+print( isinstance("a", str) )
+print( isinstance(True, bool) )
+print( isinstance({'a':1,'b':2}, dict) )
+print( isinstance([1,2,3,4,5,6], list) )

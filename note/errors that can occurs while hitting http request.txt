@@ -1,0 +1,12 @@
+NewConnectionError
+ConnectionError
+ConnectTimeoutError
+HTTPError
+
+
+# Reason:
+    - no internet connection
+    - website of respective url doesn't exist
+    - poor internet
+    - timeout
+    - bad status|404

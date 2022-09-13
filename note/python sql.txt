@@ -1,0 +1,37 @@
+
+
+def t_check_if_record_exist():
+    # record_count_query = "SELECT * FROM meta_data;"
+    # db_cursor.execute(record_count_query)
+    # records = db_cursor.fetchall()
+    # print(type(records))
+
+    # record_count_query = "SELECT * FROM meta_data WHERE postscriptname = 'slick';"
+    # db_cursor.execute(record_count_query)
+    # records = db_cursor.fetchall()
+    # print(type(records))
+    # print(len(records))
+
+    record_count_query = "SELECT COUNT(*) FROM meta_data WHERE postscriptname = 'slick';"
+    db_cursor.execute(record_count_query)
+    records = db_cursor.fetchall()
+    print(type(records))
+    print(len(records))
+    print(records)
+
+    
+    record_count_query = "SELECT COUNT(*) FROM meta_data WHERE postscriptname = 'slick';"
+    db_cursor.execute(record_count_query)
+    records = db_cursor.fetchone()
+    print(type(records))
+    print(len(records))
+    print(records)
+
+    record_count_query = "SELECT COUNT(*) FROM meta_data WHERE postscriptname = 'slick';"
+    db_cursor.execute(record_count_query)
+    record_count = db_cursor.fetchone()[0]
+    print(type(record_count))
+    print(record_count)
+    
+
+t_check_if_record_exist()
